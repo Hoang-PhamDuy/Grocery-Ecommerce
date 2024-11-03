@@ -15,8 +15,21 @@
         <nav id="navbar" class="navbar show">
             <!-- Button for display Navbar menu when using TABLET size or smaller -->
             <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
-                <img src="./assets/icons/arrow-left.svg" alt="" />
+                <img class="icon" src="./assets/icons/arrow-left.svg" alt="" />
             </button>
+
+            <!-- Cart & Favorite in Navbar Mobile View -->
+            <a href="#!" class="nav-btn d-none d-md-flex">
+                <img class="icon" src="./assets/icons/buy.svg" alt="" />
+                <span class="nav-btn__title">Cart</span>
+                <span class="nav-btn__qnt">3</span>
+            </a>
+
+            <a href="#!" class="nav-btn d-none d-md-flex">
+                <img class="icon" src="./assets/icons/heart.svg" alt="" />
+                <span class="nav-btn__title">Favorite</span>
+                <span class="nav-btn__qnt">3</span>
+            </a>
 
             <!-- Navbar Responsive -->
             <ul class="navbar__list js-dropdown-list">
@@ -34,7 +47,7 @@
                                 <div class="top-menu__main">
                                     <!-- Menu column -->
                                     <div class="menu-column">
-                                        <div class="menu-column__icon">
+                                        <div class="menu-column__icon d-lg-none">
                                             <img
                                                 src="./assets/img/category/cate-1.1.svg"
                                                 alt=""
@@ -47,7 +60,7 @@
                                             />
                                         </div>
                                         <div class="menu-column__content">
-                                            <h2 class="menu-column__heading">
+                                            <h2 class="menu-column__heading d-lg-none">
                                                 <a href="#!">All Departments</a>
                                             </h2>
                                             <ul class="menu-column__list js-menu-list">
